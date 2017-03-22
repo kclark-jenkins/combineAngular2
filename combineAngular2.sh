@@ -74,9 +74,9 @@ combine() {
 }
 
 showHelp() {
-  echo "angularUnification.sh"
+  echo "combineAngular2"
   echo ""
-  echo "  Shell script that attempts to minify then unify your Angular2 application JavaScript in the correct order"
+  echo "  Shell script that attempts to compress then combine your Angular2 application JavaScript in the correct order"
   echo ""
   echo "  Author: Kristopher Clark"
   echo "  License: MIT"
