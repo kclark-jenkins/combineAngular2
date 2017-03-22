@@ -32,11 +32,3 @@ Arguments:
 ```
 
 Make sure you pass the JavaScript files to the script in the order you need them to be included.
-
-## Production use
-
-To build your Angular2 project and use this script all in one step add something similar to the following to your package.json scripts
-
-```
-ng build --prod --no-sourcemap && ./combineAngular2.sh -f krisbox.min.js -d dist/inline.*.bundle.js,dist/polyfills.*.bundle.js,dist/vendor.*.bundle.js -o `pwd`/dist/ -m dist/main.*.bundle.js -c `pwd`/combine.sh
-```
