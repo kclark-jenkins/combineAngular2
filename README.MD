@@ -38,5 +38,5 @@ Make sure you pass the JavaScript files to the script in the order you need them
 To build your Angular2 project and use this script all in one step add something similar to the following to your package.json scripts
 
 ```
-ng build --prod --no-sourcemap && ./combineAngular2.sh -f krisbox.min.js -d dist/inline.e25bbd8687f0d0b4dd15.bundle.js,dist/polyfills.dea81ef5f6ef31b15fb7.bundle.js,dist/vendor.7b5c5b89d5332450f2fb.bundle.js -o `pwd`/dist/ -m dist/main.b7233ad52b515d51079e.bundle.js -c `pwd`/combine.sh
+ng build --prod --no-sourcemap && ./combineAngular2.sh -f krisbox.min.js -d dist/inline.*.bundle.js,dist/polyfills.*.bundle.js,dist/vendor.*.bundle.js -o `pwd`/dist/ -m dist/main.*.bundle.js -c `pwd`/combine.sh
 ```
